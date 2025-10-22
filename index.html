@@ -216,6 +216,56 @@
         font-size: 0.8rem;
       }
     }
+    .rules-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    max-width: 900px;
+    text-align: left;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(5px);
+    animation: fadeInUp 1.5s ease;
+  }
+
+  .rules-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #ffd966;
+  }
+
+  .rules-container ul {
+    list-style: disc inside;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #fff;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .rules-container {
+      padding: 15px 20px;
+    }
+
+    .rules-container h2 {
+      font-size: 1.3rem;
+    }
+
+    .rules-container ul {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .rules-container h2 {
+      font-size: 1.2rem;
+    }
+
+    .rules-container ul {
+      font-size: 0.9rem;
+    }
+  }
   </style>
 </head>
 <body>
@@ -247,7 +297,18 @@
     </div>
   </div>
 
-  <img src="https://cdn-icons-png.flaticon.com/512/2467/2467816.png" class="shuttle" alt="Shuttle Racket">
+ <div class="rules-container">
+  <h2>Rules & Regulations</h2>
+  <ul>
+    <li>All team members must belong to the same hostel block.</li>
+    <li>All games will follow standard rules as per the respective sport.</li>
+    <li>Respect the referees’ decisions; disputes will be resolved by the committee.</li>
+  
+    <li>Registration must be completed via the provided Google Forms before the event.</li>
+    
+    
+  </ul>
+</div>
 
   <footer>
     Organized by Hostel Committee | VIT-AP University
